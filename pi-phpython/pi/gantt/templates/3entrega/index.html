@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>PI - PHPYTHON - GANTT</title>	
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+    
+      <script type="text/javascript" src="js/frappe-gantt.min.js"></script>
+     <script type="text/javascript" src="js/javascript.js"></script>
+    </head>
+<body>
+	<div id="top" class="boxShadow1">
+       <div class="dropdown_menusuperior">
+          <img id="imgbtn_menusuperior" src="images/btn_menu_superior.png" onclick="menuDropdown_menusuperior()" class="dropbtn_menusuperior">
+              <div id="menu_superior" class="dropdown-content_menusuperior">
+                <a href="#novo_gantt_planner">Novo Gantt Planner</a>
+                <a href="#abrir_gantt_planner">Abrir Gantt Planner</a>
+                  <a href="#" onclick="clicaPessoas()">Pessoas</a>
+               
+              </div>
+        </div>
+
+         <h1>Gantt Planner - by PHPython</h1>
+        <img id="imgbtn_play" src="images/img_play.png">
+
+
+        <div class="w3-container"> 
+        <img id="imgbtn_duvida" src="images/img_duvida.jpg" onclick="document.getElementById('duvida').style.display='block'">
+        <div id="duvida" class="w3-modal">
+            <div class="w3-modal-content">
+              <div class="w3-container">
+                <span onclick="document.getElementById('duvida').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+
+                <h1> O que é um grafico de gantt?</h1>
+                <p> O Gráfico de Gantt, também conhecido como Diagrama de Gantt, é uma ferramenta visual para controlar o cronograma de um 
+                    projeto ou de uma programação de produção, ajudando a avaliar os prazos de entrega e os recursos críticos.</p>
+                    
+                <p> - Como criar uma pessoa?
+                    Ao ir até a NAVIBAR, clicar na aba esquerda, selecionar "Cadastro de pessoas", feito isso, será gerido um código para a 
+                    pessoa e será necessário atribuir um nome á ela uma forma de conta, como por exemplo, número de celular ou email.</p>
+                    
+                <p> - Como criar um projeto?
+                    Ao clicar no primeiro icone, da esquerda para direita, acima do gráfico, será aberto uma tela para cadatro de projetos, 
+                    onde, ao criar um projeto ele terá um código, e será necessária dar um nome, uma cor, e, informar a data inicial do projeto,
+                    assim como, seu prazo final.</p>
+                    
+                <p> - Como criar uma tarefa?
+                    Ao clicar no segundo icone, da esquerda para direita, acima do gráfico, será aberto uma tela para cadatro de tarefa, onde, 
+                    ao criar uma tarefa ele terá um código, e será necessária dar um nome, informar a qual projeto essa tarefa pertence, se 
+                    ela tem alguma dependência de outra tarefa, e também sua data inicial e o prazo de entrega.</p>
+                    
+                <p>- Como atribuir pessoas a uma tarefa?
+                    Ao clicar no terceiro icone, da esquerda para direita, acima do gráfico, será aberto uma janela, onde o usuário terá de 
+                    selecionar um projeto, selecionar uma tarefa, e selecionar a(s) pessoa(s) responsável(is) pela tarefa.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        
+        <div class="w3-container"> 
+            <img id="imgbtn_interrogacao" src="images/img_interrogacao.png" onclick="document.getElementById('id01').style.display='block'" >
+
+
+        <div id="id01" class="w3-modal">
+            <div class="w3-modal-content">
+              <div class="w3-container">
+                <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+
+                <p align = "center"><b>BEM-VINDO AO HELP!</b></p>
+                <p align = "center"><b>Vamos fazer passo a passo algumas opções para que possa lhe auxiliar</b></p>
+                <p align = "center"><b>Você pode escolher uma das opções que desejar para ir direto ou pode ler o manual inteiro</b></p>
+                <button  class="btn_shadow5" ><a href="#cadFunc">Cadastro de Funcionario</a></button>
+                <button  class="btn_shadow6" ><a href="#cadProj">Cadastro de Projeto</a></button>
+                <button  class="btn_shadow6" ><a href="#cadTar">Cadastro de Tarefa</a></button>
+                <button  class="btn_shadow6" ><a href="#AddCol">Adicionar colaborador</a></button><br><br><br>
+                <p align = "center"><b>Vamos começar com cadastro!</b></p>
+
+                <p align = "center" id = "cadFunc"><b>Primeiro de tudo, vá nos 3 pontinhos para ver as opções</b></p><br>
+                <img src = "images/img_help/img_inicio.jpeg" alt="Image" height="110" width="850">
+                <p align = "left"><b>Nele irá abrir 3 opções, que você poderá fazer um novo cadastro da área que escolher, como
+                por exemplo Pessoas.</b></p><br><br>
+
+                <table>
+                    <tr >
+                      <td> <img src = "images/img_help/img_cadPessoas.jpeg" alt="Image" height="150" width="300"></td>        
+                      <td> <p align = "center"><b>Ao ir até a NAVIBAR, clicar na aba esquerda, selecionar "Cadastro de pessoas", feito isso, será gerado 
+                        um código para a pessoa e será necessário atribuir um nome á ela e uma forma de contato, como por exemplo, número de celular 
+                        ou email. Feito isso, clique em gravar e seu cadastro será salvo e finalizado.</b></p></td> 
+                    </tr> 
+
+                  </table>
+                <br><br>
+                <img src = "images/img_help/cadPessoas.jpeg" alt="Image" height="450" width="850"><br><hr/>
+                <p align = "center"><b>NAS OPÇÕES ACIMA DO GANTT, VOCÊ TAMBÉM ENCONTRA ALGUMAS FUNÇÕES COMO MOSTRA NA IMAGEM ABAIXO:</b></p>
+                <img src = "images/img_help/img_icons.jpeg" alt="Image" height="110" width="850"><br><br><br>
+
+
+
+                <p align = "left" id = "cadProj"><b>OPÇÃO 1: CADASTRAMENTO DE PROJETO</b></p>
+                <img src = "images/img_help/img_cadProjeto.jpeg" alt="Image" height="110" width="850">
+                <p align = "center"><b>Ao clicar no primeiro icone, da esquerda para direita, acima do gráfico, será aberto uma tela para cadastro de 
+                projetos, onde, ao criar um projeto ele terá um código, e será necessária dar um nome, uma cor, e, informar a data inicial do projeto, 
+                assim como, seu prazo final. Feito isso, clique em gravar e seu cadastro será salvo e finalizado.</b></p>
+                <img src = "images/img_help/cadProjeto.jpeg" alt="Image" height="300" width="850"><br><br><br>
+
+
+
+                <p align = "left" id = "cadTar"><b>OPÇÃO 2: CADASTRAMENTO DE TAREFA</b></p><br>
+                <img src = "images/img_help/img_cadTarefa.jpeg" alt="Image" height="110" width="850"><br>
+                <p align = "left"><b>Ao clicar no segundo icone, da esquerda para direita, acima do gráfico, será aberto uma tela para cadastro
+                de tarefa, onde, ao criar uma tarefa ele terá um código, e será necessária dar um nome, informar a qual projeto essa tarefa pertence, 
+                se ela tem alguma dependência de outra tarefa, e também sua data inicial e o prazo de entrega. Feito isso, clique em gravar e seu 
+                cadastro será salvo e finalizado.</b></p>
+                <img src = "images/img_help/cadTarefa.jpeg" alt="Image" height="450" width="850"><br><br><br>
+
+
+
+                <p align = "left" id = "AddCol"><b>OPÇÃO 3: ATRIBUIÇÃO DE PESSOAS</b></p><br>
+                <img src = "images/img_help/img_cadAddPessoa.jpeg" alt="Image" height="110" width="850"><br>
+                <p align = "left"><b>Ao clicar no terceiro icone, da esquerda para direita, acima do gráfico, será aberto uma janela, 
+                    onde o usuário terá de selecionar um projeto, selecionar uma tarefa, e selecionar a(s) pessoa(s) responsável(is) pela 
+                    tarefa. Feito isso, clique em gravar e sua atribuição será salva e finalizada.</b></p>
+                <img src = "images/img_help/cadAddPessoa.jpeg" alt="Image" height="450" width="850"><br><br><br>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <button id="btn_compartilhar" class="btn_shadow2">COMPARTILHAR</button>
+	</div>
+    
+    <div id="top_central" class="boxShadow1">
+        <h1 contenteditable="true" id="nomePlanner">Nome Planejamento</h1>
+        
+             
+         <img id="imgbtn_prj" src="images/img_prj.png" onclick="clicaProjeto()">
+         
+        
+         
+         <img id="imgbtn_trf" src="images/img_trf.png" onclick="clicaTarefa()" class="dropbtn_trf">
+           
+        
+         
+        <img id="imgbtn_pessoas" src="images/img_pessoas.png" onclick="distribuiPessoas()" class="dropbtn_pessoas">
+        
+              
+        
+        <img id="imgbtn_download" src="images/img_download.png">
+        
+
+        <button id="btn_salvarplanning" class="btn_shadow2" onclick="carregaGantt()">SALVAR</button>    
+
+    </div>
+
+	<div  id="central">
+	
+			<div id="left_center" class="box">
+                
+                <div id="prj_cadastrados">
+                    
+                    <div id="trf_cadastradas">
+
+                    </div>
+
+                </div>
+                
+                <!--<button id="btn_expandetarefa" class="btn_shadow1" onclick="expandeProjetos()"></button>
+                <div id="col_tarefas">
+                    
+                </div>
+-->
+			</div>
+
+			<div id="center" class="box">
+               <svg id="gantt"></svg>
+                
+			</div>
+
+			<div id="right_center" class="box">
+                
+                <div id="pessoas_top">
+                    <button id="btn_pessoas" class="btn_shadow2" onclick="expandePessoas()">PESSOAS</button>
+                    <div id="pessoas_list" class="boxShadow1"> 
+                        
+                    </div>
+                </div>
+                
+                <div id="datas">
+                    <button id="btn_datas" class="btn_shadow2">DATAS</button>
+                    <div id="datas_list" class="boxShadow1"> 
+                        <br>
+                        <label class="styleWord1">PRAZO: </label>
+                        <br><br>
+                        <label class="styleWord1">INICIO:</label>
+                        <br><br>
+                        <label class="styleWord1">FINAL:</label>
+                        
+                    </div>
+                </div>
+                 
+			</div>
+	</div>
+    <div id="bottom_central" class="boxShadow1">
+            <button id="btn6" class="btn_shadow4" onclick="periodo_dia()">DIA</button>
+            <button id="btn6" class="btn_shadow4" onclick="periodo_semana()">SEMANA</button>
+            <button id="btn6" class="btn_shadow4" onclick="periodo_mes()">MÊS</button>
+            <button id="btn6" class="btn_shadow4" onclick="periodo_ano()">ANO</button> 
+    </div>
+    
+     <!------------------------------------------------------------->
+    
+    <!--CADASTRO DE PROJETO -->
+            <dialog id="abreCadastroProjeto" class="abreCadastro"> 
+         <div id="bloco_superior" class="boxShadow1">
+                <button id="btn_fechar" class="btn_shadow2" onclick="fecharCadastroProjeto()">[X]Fechar</button>
+             <h1 class="styleWord1">Cadastro de Projeto</h1>        </div>
+        <br><br>
+                
+            
+             <div id="cadastro_projeto">
+                 
+                 <label  for="codProjeto">Código projeto: <input readonly="true" id="codProjeto" type="text" name="prj_id"></label>
+                 <button type="button" id="codAnteriorCadasProjeto" class="btn_shadow1_1" onclick="recuarCodProjeto()"></button>
+                 <button type="button" id="codPosteriorCadasProjeto" class="btn_shadow1" onclick="avancarCodProjeto()"></button>
+                                  <br><br>
+                <label for="nomeProjeto">Nome projeto: <input id="nomeProjeto" readonly="true" type="text" name="prj_nome"></label>
+                  
+                  <label for="escopo">Escopo: <input id="escopo" readonly="true" type="text" name="prj_escopo"></label>
+                  <br><br>
+                  <label for="dt_inicioProjeto">Data Início: <input readonly="true" id="dt_inicioProjeto" type="date" name="prj_datainicio"></label>
+                  
+                  <label for="dt_prazoProjeto">Prazo Entrega: <input readonly="true" id="dt_prazoProjeto" type="date" name="prj_prazo"></label>
+                    <br><br>
+                  <label for="corProjeto">Cor do projeto: <input disabled="true" id="corProjeto" type="color" name="prj_cor"></label>
+                    <br><br>
+                  <button id="btn_novoprojeto" type="submit" class="btn_shadow2" onclick="novoProjeto()">Novo</button>
+                
+                      <button id="btn_salvarprojeto" type="submit" class="btn_shadow2" onclick="gravarProjeto()">Gravar</button>
+                      <button id="btn_cancelarCadasProjeto" type="submit" class="btn_shadow2" onclick="cancelarCadasProjeto()">Cancelar</button>
+                     <button id="btn_excluirCadasProjeto" type="submit" class="btn_shadow2" onclick="excluirCadasProjeto()">Excluir</button>
+                 
+                </div>
+               
+                <div id='listaProjeto'>
+            
+            <table border=1>
+                    <thead>
+                        <caption>Projetos cadastrados:</caption>
+                        <tr>
+                        <th>Código</th><th>Projeto</th><th>Data Início</th><th>Prazo</th><th>Cor</th>
+                        </tr>
+                  </thead>
+                    <tbody id="corpoTabelaProjeto">
+                        
+                       
+                    
+
+
+                    </tbody>
+
+        
+            </table>
+                   
+        </div>
+                 
+              
+            </dialog>
+            
+     <!------------------------------------------------------------->
+    <!--- CADASTRO DE PESSOAS -->
+    <dialog id="abreCadastroPessoas" class="abreCadastro"> 
+         <div id="bloco_superior" class="boxShadow1">
+                <button id="btn_fechar" class="btn_shadow2" onclick="fecharCadastroPessoa()">[X]Fechar</button>
+             <h1 class="styleWord1">Cadastro de Pessoas</h1>        </div>
+        <br><br>
+        <div id='cadastroPessoas'>
+            <label for='codPessoa'>Código: </label><input type='text' id='codPessoa' name="pes_id" name="pes_id">
+            <button type="button" id="codAnteriorCadasPessoa" class="btn_shadow1_1" onclick="recuarCodPessoa()"></button>
+                 <button type="button" id="codPosteriorCadasPessoa" class="btn_shadow1" onclick="avancarCodPesso()"></button>
+            <br><br>
+            <label for='nomePessoa'>Nome da pessoa: </label><input type='text' id='nomePessoa' name="nomePessoa" name="pes_nome">
+            <br><br>
+            <label for='contato'>Contato: </label><input type='text' id='contato' name="pes_contato">
+            <br><br>
+            <button id="btn_novapessoa" type="submit" class="btn_shadow2" onclick="novaPessoa()">Novo</button>       
+            <button id="btn_salvarpessoa" type="submit" class="btn_shadow2" onclick="gravarPessoa()">Gravar</button>
+            <button id="btn_cancelarCadasPessoa" type="submit" class="btn_shadow2" onclick="cancelarCadasPessoa()">Cancelar</button>
+            <button id="btn_excluirCadasPessoa" type="submit" class="btn_shadow2" onclick="excluirCadasPessoa()">Excluir</button>
+                
+        </div>
+        
+        <br><br><br>
+        <div id='TablePessoas'>
+            
+            <table border=1>
+                    <thead>
+                        <caption>Pessoas cadastradas:</caption>
+                        <tr>
+                        <th>Código</th><th>Nome</th><th>Contato</th>
+                        </tr>
+                  </thead>
+                    <tbody id="corpoTabelaPessoas">
+                        
+                       
+                    
+
+
+                    </tbody>
+
+        
+            </table>
+        </div>
+        
+    </dialog>
+ <!------------------------------------------------------------->
+    
+<!--CADASTRO DE TAREFA -->
+            <dialog id="abreCadastroTarefa" class="abreCadastro"> 
+         <div id="bloco_superior" class="boxShadow1">
+                <button id="btn_fechar" class="btn_shadow2" onclick="fecharCadastroTarefa()">[X]Fechar</button>
+             <h1 class="styleWord1">Cadastro de Tarefa</h1>        
+         </div>
+        <br><br>
+                
+           <div id="cadastro_tarefa">
+                <label  for="codProjeto">Código: <input readonly="true" id="codTarefa" type="text" name="trf_id"></label>
+                 <button type="button" id="codAnteriorCadasTarefa" class="btn_shadow1_1" onclick="recuarCodTarefa()"></button>
+                 <button type="button" id="codPosteriorCadasTarefa" class="btn_shadow1" onclick="avancarCodTarefa()"></button>
+                <br><br>
+               <label for="selecionaProjeto">Selecione o projeto: <input id="selecionaProjeto" disabled="true" type="text" list="listaProjetos" name="fk_prj_id"></label>
+                  <datalist id="listaProjetos">
+                      
+                  </datalist>
+               <br>
+               <label for="interdependencia">Interdependencia: <input disabled="true" id="interdependencia" type="text" list="listaInterdependencia" name="trf_interdependencia"></label>
+                  <datalist id="listaInterdependencia">
+                      
+                  </datalist>
+               <br>
+                <label for="nomeTarefa">Nome tarefa: <input id="nomeTarefa" readonly="true" type="text" name="trf_nometarefa"></label>
+               <br>
+               <br>
+               <label for="dt_inicioTarefa">Data Início: <input id="dt_inicioTarefa" readonly="true" type="date" name="trf_datainicial"></label>
+               <label for="dt_finalTarefa">Data Final: <input id="dt_finalTarefa" readonly="true" type="date" name="trf_datafinal"></label>
+               <br>
+               <label for="dt_prazoTarefa">Prazo: <input id="dt_prazoTarefa" readonly="true" type="date" name="trf_prazo"></label>
+               <label>Entregável: </label><input id="entregavel" disabled="true" type="checkbox" name="trf_entregavel">
+               <br><br>
+               <button id="btn_novatarefa" type="submit" class="btn_shadow2" onclick="novaTarefa()">Novo</button>       
+               <button id="btn_salvartarefa" type="submit" class="btn_shadow2" onclick="gravarTarefa()">Gravar</button>
+                      <button id="btn_cancelarCadasTarefa" type="submit" class="btn_shadow2" onclick="cancelarCadasTarefa()">Cancelar</button>
+                     <button id="btn_excluirCadasTarefa" type="submit" class="btn_shadow2" onclick="excluirCadasTarefa()">Excluir</button>
+                
+                </div>
+          </dialog>
+            
+     <!------------------------------------------------------------->
+    
+    
+     <!--DISTRIBUIR PESSOAS AOS PROJETOS -->
+    
+    <dialog id="distribuiPessoas" class="abreCadastro"> 
+         <div id="bloco_superior" class="boxShadow1">
+                <button id="btn_fechar" class="btn_shadow2" onclick="fecharDistribuicaoPessoa()">[X]Fechar</button>
+             <h1 class="styleWord1">Distribuição Pessoas </h1>       
+        </div>
+        <br><br>
+        <div id='distribuicaoPessoas'>
+            <label  for="codDistribuicao">Código: <input readonly="true" id="codDistribuicao" type="text" name="pes_trf_id"></label>
+            <button type="button" id="codAnteriorDistribuicao" class="btn_shadow1_1" onclick="recuarCodDistribuicao()"></button>
+                 <button type="button" id="codPosteriorDistribuicao" class="btn_shadow1" onclick="avancarCodDistribuicao()"></button>
+                <br><br>
+           
+               <label for="selecionaProjeto_distribuicao">Selecione o projeto: <input id="selecionaProjeto_distribuicao" disabled="true" type="text" list="listaProjetos_distribuicao" oninput="carregaDataListTarefasDistribuicao()"></label>
+                  <datalist id="listaProjetos_distribuicao">
+                     
+                  </datalist>
+               <br>
+            <label for="listaTarefa">Selecione a Tarefa: <input disabled="true" id="listaTarefa" type="text" list="listaTarefa_distribuicao" name="fk_trf_id" oninput="carregaDatalistPessoas_distribuicao()"></label>
+                  <datalist id="listaTarefa_distribuicao">
+                      
+                  </datalist>
+               <br>
+            <label for="listaPessoa">Selecione a Pessoa: <input disabled="true" id="listaPessoa" type="text" list="listaPessoa_distribuicao" name="fk_pes_id"></label>
+                  <datalist id="listaPessoa_distribuicao">
+                      
+                  </datalist>
+               <br>
+            <button id="btn_novadistribuicao" type="submit" class="btn_shadow2" onclick="novaDistribuicao()">Novo</button>       
+               <button id="btn_salvardistribuicao" type="submit" class="btn_shadow2" onclick="gravarDistribuicao()">Gravar</button>
+                      <button id="btn_cancelarDistribuicao" type="submit" class="btn_shadow2" onclick="cancelarCadasDistribuicao()">Cancelar</button>
+                     <button id="btn_excluirDistribuicao" type="submit" class="btn_shadow2" onclick="excluirDistribuicao()">Excluir</button>
+        </div>
+        
+        <br><br>
+        
+            <div id='TableDistribuicao'>
+            
+            <table border=1>
+                    <thead>
+                        <caption>Distribuição de pessoas:</caption>
+                        <tr>
+                        <th class="col1">Pessoa</th><th class="col2">Tarefa</th><th class="col3">Projeto</th><th class="col4">Cor</th>
+                        </tr>
+                  </thead>
+                    <tbody id="corpoTabelaDistribuicao">
+                        
+                       
+                    
+
+
+                    </tbody>
+
+        
+            </table>
+        </div>
+        
+        
+       
+    </dialog>
+    
+    
+    <!------------------------------------------------------------->
+</body>
+
+
+
+
+</html>

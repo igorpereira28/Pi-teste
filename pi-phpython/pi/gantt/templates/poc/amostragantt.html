@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Gantt App - Projeto Integrador</title>
+
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/frappe-gantt/0.3.0/frappe-gantt.min.css">
+
+  </head>
+  <body>
+    <h1>Projeto 1</h1>
+
+    <div id="criar_tarefas">
+
+            <input id="cod_tarefa" type="text" value="1">
+            <label for="nome_tarefa">Informe o nome da tarefa: <input id="nome_tarefa" type="text"></label>
+            <label for="data_inicio">Data Início: <input id="data_inicio" type=date></label>
+            <label for="data_termino">Data Término: <input id="data_termino" type=date></label>
+            <button type="button" onclick="Cadastrar()">Cadastrar</button>
+            <button type="button" onclick="enviar_gantt()">Enviar Gantt</button>
+
+
+
+
+    </div>
+
+  <svg id="gantt"></svg>
+    
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Gantt - Frappe.io -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/frappe-gantt/0.3.0/frappe-gantt.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js"></script>
+
+
+    
+    
+    <script type="text/javascript" >
+
+        function esconderCampoCod() {
+            cod_tarefa.style.display = 'none';
+        }
+
+        function Cadastrar(){
+            var cod = parseInt(document.getElementById('cod_tarefa').value);
+                var name = document.getElementById("nome_tarefa");
+                var start = document.getElementById("data_inicio");
+                var end = document.getElementById("data_termino");
+                
+                var id = 'Task ' + cod;
+                
+                novo_cod = cod+1;
+                document.getElementById("cod_tarefa").value = novo_cod;
+
+                var progress = 20;
+                var custom_class = "bar-milestone";
+
+                var tasks = [{'id': id.value, 'name':name.value, 'start':start.value, 'end':end.value, 'progress':progress.value, 'custom_class': custom_class.value}];
+
+                
+                var gantt = new Gantt("#gantt", tasks);
+
+                    
+        }
+
+        function enviar_gantt(){
+
+                 console.log(conj_tasks);
+
+                 //for(i = 0; i<conj_tasks.lenght;i++){
+
+                 
+                 
+                //}
+
+                }
+                    
+
+
+        
+                
+       window.onload = esconderCampoCod;
+        
+
+
+
+/*var tasks = [
+  {
+    id: 'Task 1',
+    name: 'Desenvolvimento CRUD',
+    start: '2020-02-30',
+    end: '2020-03-15',
+    progress: 20,
+    custom_class: 'bar-milestone' // optional
+  },
+    {
+    id: 'Task 3',
+    name: 'Versão 1 - Front End',
+    start: '2020-03-15',
+    end: '2020-03-30',
+    progress: 20,
+    custom_class: 'bar-milestone' // optional
+  },
+    {
+    id: 'Task 2',
+    name: 'Versão 2 - Front End',
+    start: '2020-04-10',
+    end: '2020-04-15',
+    progress: 20,
+    custom_class: 'bar-milestone' // optional
+  },
+      {
+    id: 'Giovanni',
+    name: 'Entrega Modelagem dados',
+    start: '2020-04-15',
+    end: '2020-04-20',
+    progress: 20,
+    custom_class: 'bar-milestone' // optional
+  },
+]*/
+
+
+
+    
+    </script>
+  </body>
+</html>

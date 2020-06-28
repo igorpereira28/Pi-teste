@@ -1,0 +1,805 @@
+/*
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+
+*/
+@import url(./frappe-gantt.css);
+
+
+/*DEFININDO A CLASS BORDER BOX-SHADOW*/
+
+/**/
+.boxShadow1{
+	box-shadow: 0px 2px 5px #888888;
+}
+
+.btn_shadow1{
+    width: 150px;
+    height: 35px;
+    border-radius: 6px;
+    background-color: #698FEB;
+    color: white;
+    font-weight: 500;
+    font-family: monospace;
+    box-shadow: 0px 0px 5px #698FEB;
+    background-image: url(../images/seta1.png);
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.btn_shadow1_1{
+    width: 150px;
+    height: 35px;
+    border-radius: 6px;
+    background-color: #698FEB;
+    color: white;
+    font-weight: 500;
+    font-family: monospace;
+    box-shadow: 0px 0px 5px #698FEB;
+    background-image: url(../images/seta2.png);
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.btn_shadow2{
+    width: 150px;
+    height: 35px;
+    border-radius: 6px;
+    background-color: #698FEB;
+    color: white;
+    font-weight: 500;
+    font-family: sans-serif;
+    box-shadow: 0px 0px 5px #698FEB;
+}
+
+.btn_shadow3{
+    width: 150px;
+    height: 35px;
+    border-radius: 6px;
+    background-color: white;
+    color: #698FEB;
+    font-weight: 500;
+    font-family: monospace;
+    box-shadow: 0px 0px 5px #698FEB;
+    background-image: url(../images/olho2.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    margin-bottom: 2px;
+}
+
+.btn_shadow4{
+    width: 150px;
+    height: 35px;
+    border-radius: 6px;
+    background-color: white;
+    color: #698FEB;
+    font-weight: 500;
+    font-family: monospace;
+    box-shadow: 0px 0px 5px #698FEB;
+    
+}
+
+.btn_shadow5{
+    width: 150px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: #698FEB;
+    color: white;
+    font-weight: 500;
+    font-family: sans-serif;
+    box-shadow: 0px 0px 5px #698FEB;
+    margin-left: 100px;
+}
+
+.btn_shadow6{
+    width: 150px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: #698FEB;
+    color: white;
+    font-weight: 500;
+    font-family: sans-serif;
+    box-shadow: 0px 0px 5px #698FEB;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+
+.styleWord1 {
+    color: #698FEB;
+    font-weight: 500;
+    font-family: monospace;
+}
+/**/
+/*///////////////////////////////////*/
+
+/*///////////////////////////////////*/
+
+
+/*TELA PADRÃO DE CADASTROS - DIALOG*/
+
+.abreCadastro{
+    border-style: inset;
+  border-width: 5px;
+  border-color: #698FEB;
+  border-radius:0px 20px 0px 20px;
+    width: 600px;
+    height: 600px;
+}
+
+.abreCadastro #btn_fechar{
+    margin-top: 10px;
+     margin-left: 500px;
+     width: 80px;
+}
+
+#bloco_superior{
+     width: 590px;
+    height: 60px;
+    margin-left: 5px;
+     margin-top: 10px;
+}
+
+#bloco_superior h1{
+    width: 320px;
+    margin-left: 5px;
+     margin-top: -30px;
+}
+
+
+
+/*///////////////////////////////////*/
+
+/*DEFININDO O ESTILO DA BARRA SUPERIOR*/
+#top {
+    display: inline-flex;
+	width: 1248px;
+	height: 60px;
+}
+
+#top #imgbtn_menusuperior{
+    justify-content: flex-start;
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+/*MENU 1 DROPDOWN*/
+
+/**/
+.dropdown_menusuperior {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content_menusuperior {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  width: 165px;
+  
+  
+}
+
+.dropdown-content_menusuperior a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  width: 130px;
+    border-style: solid;
+    border-color: #698FEB;
+    border-width: 1px;
+}
+
+.dropdown_menusuperior a:hover {background-color: #ddd;}
+
+.show {display: block;}
+/**/
+
+
+/*////////////////*/
+
+#top h1{
+    margin-top: 13px;
+    justify-content: flex-start;
+    margin-left: 60px;
+    width: 350px;
+    font-size: 1.2vw;
+    
+    font-family: chandas;
+}
+
+#top #imgbtn_interrogacao{
+    justify-content: flex-end;
+    width: 30px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: -15px;
+}
+
+
+#top #imgbtn_duvida{
+    justify-content: flex-end;
+    width: 36px;
+    height: 36px;
+    margin-top: 18px;
+    margin-left: 10px;
+}
+
+
+
+#top #imgbtn_play{
+    justify-content: flex-end;
+    width: 30px;
+    height: 30px;
+    margin-top: 18px;
+    margin-left: 550px;
+}
+
+#top #btn_compartilhar{
+    justify-content: flex-end;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+/*///////////////////////////////////*/
+
+
+
+/*DEININDO O ESTILO DA PÁGINA CENTRAL*/
+
+/*TOPO*/
+#top_central{
+    margin-top: 30px;
+    margin-left: 200px;
+    display:inline-flex;
+    width: 860px;
+    height: 60px;
+}
+
+#top_central h1{
+    justify-content: flex-start;
+    width: 200px;
+    font-size: 1.2vw;
+    font-family: chandas;
+    margin-right: 350px;
+    margin-left: 30px;
+    margin-top: 15px;
+    height: 40px;
+    
+}
+
+
+
+#top_central #btn_salvarplanning{
+    margin-top: 9px;
+    width: 80px;
+    margin-left: -20px;
+}
+
+#top_central #imgbtn_prj{
+    justify-content: flex-end;
+    width: 30px;
+    height: 30px;
+    margin-top: 13px;
+    margin-right: 85px;
+    margin-left: -100px;
+    
+}
+
+
+
+
+#top_central #imgbtn_trf{
+    justify-content: flex-end;
+    width: 30px;
+    height: 30px;
+    margin-top: 12px;
+    margin-right: 90px;
+    margin-left: -40px;
+    
+}
+
+
+
+
+
+
+#top_central #imgbtn_pessoas{
+    justify-content: flex-end;
+    width: 30px;
+    height: 40px;
+    margin-top: 10px;
+    margin-right: 80px;
+    margin-left: -50px;
+    
+}
+
+
+
+#top_central #imgbtn_download{
+    justify-content: flex-end;
+    width: 30px;
+    height: 30px;
+    margin-top: 12px;
+    margin-right: 50px;
+    margin-left: -50px;
+    
+}
+
+
+
+#top_central #btn_salvarprojeto{
+    margin-top: 10px;
+    width: 80px;
+}
+
+/*///////////////////////////////////*/
+
+/*DEFININDO O ESTILO DAS COLUNAS CENTRAIS*/
+
+#central{
+    
+	width: 1310px;
+	display: flex;
+	flex-wrap: wrap;    
+	margin-top: 3px;
+}
+
+#left_center{
+	
+	width: 180px;
+	height: 380px;
+    justify-content: flex-start;
+    
+	
+}
+
+#central #left_center #col_tarefas{
+    height: 350px;
+    width: 170px;
+    overflow:auto;
+    margin-left: 15px;
+    
+}
+
+#left_center #btn_expandetarefa{
+    margin-left: 15px;
+}
+
+#center {
+    margin-left: 20px;
+	width: 856px;
+	height: 380px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #68BAE8;
+    justify-content: center;
+}
+
+
+
+#right_center{
+    justify-content: flex-end;
+    
+	width: 200px;
+	height: 380px;
+	
+}
+
+#right_center #btn_pessoas{
+    margin-left: 25px;
+}
+
+#right_center #pessoas_top #pessoas_list{
+    width: 145px;
+    height: 160px;
+    margin-left: 27px;
+    margin-top: 3px;
+    overflow:auto;
+    
+    
+}
+
+#right_center #pessoas_top #pessoas_list label{
+    margin-left: 50px;
+    width: 80px;
+    overflow:auto;
+    display: inline-grid;
+    
+}
+
+#right_center #btn_datas{
+    margin-left: 25px;
+    margin-top: 2px;
+}
+
+#right_center #datas #datas_list{
+    width: 145px;
+    height: 145px;
+    margin-left: 27px;
+    margin-top: 3px;
+}
+
+#right_center #datas #datas_list label{
+    margin-left: 10px;
+}
+
+
+
+/*///////////////////////////////////*/
+
+#bottom_central{
+     margin-top: 3px;
+    margin-left: 200px;
+    display:flex;
+    justify-content: flex-end;
+    width: 860px;
+    height: 60px;
+    display: inline-block;
+}
+
+#bottom_central #btn6{
+    margin-left: 8px;
+    margin-top: 8px;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+/*///////////////////////////////////*/
+
+
+/*HELP*/
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+
+/*CADASTRO PROJETO*/
+
+#cadastro_projeto{
+    width: 580px;
+    margin-left: 15px;
+    display: block;
+    
+}
+
+
+#cadastro_projeto #codProjeto{
+   width: 100px;
+   
+    
+}
+
+#cadastro_projeto #codAnteriorCadasProjeto{
+    width: 30px;
+    margin-left: 5px;
+}
+
+#cadastro_projeto #codPosteriorCadasProjeto{
+    width: 30px;
+    margin-left: 5px;
+    
+}
+
+#cadastro_projeto #nomeProjeto{
+   width: 200px;
+}
+#cadastro_projeto #escopo{
+    width: 200px;
+}
+#cadastro_projeto #dt_inicioProjeto{
+    width: 150px;
+}
+#cadastro_projeto #dt_prazoProjeto{
+    width: 150px;
+}
+#cadastro_projeto #corProjeto{
+    width: 200px;
+}
+#cadastro_projeto #btn_novoprojeto{
+    width: 100px;
+}
+#cadastro_projeto #btn_salvarprojeto{
+    width: 100px;
+    margin-left: 5px;
+}
+#cadastro_projeto #btn_cancelarCadasProjeto{
+    width: 100px;
+    margin-left: 5px;
+}
+#cadastro_projeto #btn_excluirCadasProjeto{
+    width: 100px;
+    
+}
+
+#listaProjeto{
+    margin-top: 30px;
+    width: 550px;
+    height: 200px;
+    overflow: auto;
+}
+
+#listaProjeto table{
+    width: 500px;
+    margin-left: 30px;
+    
+}
+
+#listaProjeto table caption{
+    width: 200px;
+    margin-left: -30px;
+}
+
+
+
+/*////////////////////////////////////*/
+
+/*CADASTRO DE PESSOAS*/
+
+
+#cadastroPessoas{
+    width: 500px;
+    margin-left: 40px;
+}
+
+#cadastroPessoas input{
+    width: 250px;
+}
+
+#cadastroPessoas #codAnteriorCadasPessoa{
+    width: 30px;
+    margin-left: 5px;
+}
+
+#cadastroPessoas #codPosteriorCadasPessoa{
+    width: 30px;
+    margin-left: 5px;
+    
+}
+#cadastroPessoas #btn_novapessoa{
+    width: 100px;
+}
+#cadastroPessoas #btn_salvarpessoa{
+    width: 100px;
+    margin-left: 5px;
+}
+#cadastroPessoas #btn_cancelarCadasPessoa{
+    width: 100px;
+    margin-left: 5px;
+}
+#cadastroPessoas #btn_excluirCadasPessoa{
+    width: 100px;
+    
+}
+
+#TablePessoas{
+    margin-top: 30px;
+    width: 550px;
+    height: 200px;
+    overflow: auto;
+}
+
+#TablePessoas table{
+    width: 500px;
+    margin-left: 30px;
+    
+}
+
+#TablePessoas table caption{
+    width: 200px;
+    margin-left: -30px;
+}
+
+
+/*////////////////////////////////////*/
+
+/* PESSOAS*/
+
+
+#distribuicaoPessoas{
+    width: 500px;
+    margin-left: 20px;
+}
+
+#distribuicaoPessoas #codDistribuicao{
+    width: 100px;
+}
+
+#distribuicaoPessoas #selecionaProjeto_distribuicao{
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+#distribuicaoPessoas #listaTarefa{
+    width: 200px;
+     margin-bottom: 10px;
+}
+
+#distribuicaoPessoas #listaPessoa{
+    width: 200px;
+}
+
+#TableDistribuicao{
+    margin-top: 10px;
+    width: 600px;
+    height: 200px;
+    overflow: auto;
+}
+
+#TableDistribuicao table{
+    width: 590px;
+    margin-left: 5px;
+    
+}
+
+#TableDistribuicao caption{
+    width: 160px;
+}
+
+.col1{
+    width: 120px;
+}
+
+.col4{
+    width: 6px;
+}
+
+
+#distribuicaoPessoas #codAnteriorDistribuicao{
+    width: 30px;
+    margin-left: 5px;
+}
+
+#distribuicaoPessoas #codPosteriorDistribuicao{
+    width: 30px;
+    margin-left: 5px;
+    
+}
+
+#distribuicaoPessoas  #btn_novadistribuicao{
+    width: 100px;
+    margin-top: 10px;
+}
+#distribuicaoPessoas  #btn_salvardistribuicao{
+    width: 100px;
+    margin-left: 5px;
+}
+#distribuicaoPessoas  #btn_cancelarDistribuicao{
+    width: 100px;
+    margin-left: 5px;
+}
+
+#distribuicaoPessoas  #btn_excluirDistribuicao{
+    width: 100px;
+    margin-left: 5px;
+}
+
+
+/*////////////////////////////////////*/
+
+/*CADASTRO TAREFA*/
+
+#cadastro_tarefa{
+    width: 580px;
+    margin-left: 15px;
+    display: block;
+    
+}
+
+
+#cadastro_tarefa #selecionaProjeto{
+     width: 250px;
+    margin-bottom: 10px;
+}
+
+#cadastro_tarefa #interdependencia{
+     width: 200px;
+    margin-bottom: 10px;
+}
+
+#cadastro_tarefa #codTarefa{
+   width: 100px;
+   
+    
+}
+
+#cadastro_tarefa #codAnteriorCadasTarefa{
+    width: 30px;
+    margin-left: 5px;
+}
+
+#cadastro_tarefa #codPosteriorCadasTarefa{
+    width: 30px;
+    margin-left: 5px;
+    
+}
+
+#cadastro_tarefa #nomeTarefa{
+   width: 200px;
+}
+#cadastro_tarefa  #dt_inicioTarefa{
+    width: 150px;
+}
+#cadastro_tarefa  #dt_finalTarefa{
+    width: 150px;
+    margin-bottom: 10px;
+}
+#cadastro_tarefa  #dt_prazoTarefa{
+    width: 150px;
+}
+
+
+
+#cadastro_tarefa  #entregavel{
+    width: 15px;
+    height: 15px;
+}
+
+#cadastro_tarefa  #btn_novotarefa{
+    width: 100px;
+}
+#cadastro_tarefa  #btn_salvartarefa{
+    width: 100px;
+    margin-left: 5px;
+}
+#cadastro_tarefa  #btn_cancelarCadasTarefa{
+    width: 100px;
+    margin-left: 5px;
+}
+
+
+
+
+/*////////////////////////////////////*/
+
+
+/*CUSTOM GANTT*/
+
+
+.tcolor .bar {
+  fill: #0d0; 
+}
